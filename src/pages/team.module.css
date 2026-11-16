@@ -1,0 +1,84 @@
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 340px));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 1.5rem;
+  border-radius: 16px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-top: 4px solid var(--ifm-color-primary);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.avatar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(181, 71, 8, 0.12);
+  color: var(--ifm-color-primary);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.role {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.member h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.member p {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.linkBtn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.linkBtn:hover {
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}

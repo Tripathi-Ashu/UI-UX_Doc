@@ -1,0 +1,39 @@
+/**
+ * Global theme: Saffron accent (matches the app's design system)
+ */
+:root {
+  --ifm-color-primary: #b54708;
+  --ifm-color-primary-dark: #a24007;
+  --ifm-color-primary-darker: #983c07;
+  --ifm-color-primary-darkest: #7e3206;
+  --ifm-color-primary-light: #c85009;
+  --ifm-color-primary-lighter: #d2530a;
+  --ifm-color-primary-lightest: #ec5e0b;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #fb923c;
+  --ifm-color-primary-dark: #fa8021;
+  --ifm-color-primary-darker: #fa780f;
+  --ifm-color-primary-darkest: #d96305;
+  --ifm-color-primary-light: #fca458;
+  --ifm-color-primary-lighter: #fcad69;
+  --ifm-color-primary-lightest: #fdc496;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__title {
+  font-weight: 800;
+}
+
+/* Cleaner images and tables inside docs */
+.markdown img {
+  border-radius: 10px;
+}
+
+.markdown table {
+  display: table;
+  width: 100%;
+}
